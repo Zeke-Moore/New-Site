@@ -26,7 +26,7 @@ namespace Site.EF
                 optionsBuilder.UseSqlServer(
                      // @"Server=csc435.database.windows.net;Database=NotesAPI;Trusted_Connection=True;MultipleActiveResultSets=true;",
                      @"Server = tcp:csc435.database.windows.net; " +
-                    "Database=NotesAPI;Uid=dmoore@csc435.database.windows.net;Pwd=*GOLDEN_fire12*;Encrypt=yes;",
+                    "Database=NotesAPI;Uid=dmoore@csc435.database.windows.net;Pwd=;Encrypt=yes;",
                 options => options.ExecutionStrategy(c => new MyExecutionStrategy(c)));
             }
         }
